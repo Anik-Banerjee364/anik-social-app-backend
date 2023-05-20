@@ -13,6 +13,7 @@ const multer = require("multer");
 const path = require("path")
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const PORT =process.env.PORT || 6010;
 
 main().catch(err => console.log(err));
 async function main() {
@@ -62,6 +63,6 @@ app.use("/api/posts", postRoute);
 
 
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
     console.log("Backend server is ready");
 })
