@@ -27,7 +27,7 @@ app.use("/images", express.static(path.join(__dirname, "public/images")));
 //middleware
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://anik-social-app.netlify.app/"] // Replace with your frontend domain and port
+  origin: ["http://localhost:3000", "https://anik-social-app-new.onrender.com"] // Replace with your frontend domain and port
 };
 
 // Use the cors middleware with the specified options
